@@ -1,0 +1,58 @@
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cardDestino {
+    font-family: "Lora", serif;
+    border-style: groove;
+    width: 100%; 
+    max-width: 300px; 
+    height: 450px; 
+    background-color: #ffffff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 63px; 
+    overflow: hidden; 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cardDestino img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+  }
+  
+  .cardDestino h3,
+  .cardDestino span {
+    position: absolute; 
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .cardDestino h3 {
+    top: 30px; 
+    font-size: 1.8rem;
+  }
+  
+  .cardDestino span {
+    bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .cardDestino:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05); 
+    opacity: 0.9; 
+  }

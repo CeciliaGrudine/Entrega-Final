@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+// Variables tipográficas
+$font-primary: "Cormorant Garamond", serif;
+$font-secondary: "Lora", serif;
+
+// Extends 
+%heading-style {
+  font-family: $font-primary;
+  color: #ffffff;
+}
+
+%paragraph-style {
+  font-family: $font-secondary;
+}
+
+// estilos generales
+h2 {
+  @extend %heading-style;
+}
+
+p, h3 {
+  @extend %paragraph-style;
+}
+
+h3 {
+  font-weight: 800;
+}

@@ -1,0 +1,116 @@
+@use "../utilities/mixins";
+
+// Responsive para nav
+@include mixins.respond-to(768px) {
+  .navegacionUno, .navegacionDos {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .lista-nav {
+    justify-content: center; 
+    gap: 15px;
+    max-width: 100%; 
+  }
+
+  .lista-nav li {
+    flex: 1 1 45%; 
+    text-align: center;
+    max-width: 180px; 
+  }
+}
+
+@include mixins.respond-to(480px) {
+  .navegacionUno, .navegacionDos {
+    padding: 10px;
+  }
+
+  .lista-nav {
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .lista-nav li {
+    flex: 1 1 30%; 
+    max-width: 150px; 
+  }
+
+  .lista-nav li a {
+    padding: 8px 0;
+  }
+}
+
+// Responsive para las cards
+@include mixins.respond-to(768px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@include mixins.respond-to(480px) {
+  .card {
+    grid-template-columns: 1fr; 
+  }
+}
+
+// Responsive para tours
+@include mixins.respond-to(768px) {
+  .contenedorCards {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .cardTours {
+    height: 480px; 
+  }
+
+  .cardTours .contenidoTours {
+    padding: 15px;
+  }
+}
+
+@include mixins.respond-to(480px) {
+  .contenedorCards {
+    grid-template-columns: 1fr; 
+  }
+
+  .cardTours {
+    height: auto; 
+  }
+
+  .cardTours .contenidoTours {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .tituloCard {
+    font-size: 1.5rem;
+  }
+}
+
+// Responsive texto tours
+@include mixins.respond-to(768px) {
+  .cardTours .contenidoTours {
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem; 
+  }
+
+  .tituloCard {
+    font-size: 1.6rem; 
+  }
+}
+
+@include mixins.respond-to(480px) {
+  .cardTours .contenidoTours {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem; 
+  }
+
+  .tituloCard {
+    font-size: 1.4rem; 
+  }
+}
