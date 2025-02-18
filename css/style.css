@@ -448,16 +448,6 @@ input[type=submit] {
   }
 }
 @media (max-width: 768px) {
-  .card {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 480px) {
-  .card {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 768px) {
   .contenedorCards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -524,6 +514,16 @@ input[type=submit] {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
 }
 
 .cardDestino {

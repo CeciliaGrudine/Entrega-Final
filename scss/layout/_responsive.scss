@@ -1,7 +1,7 @@
-@use "../utilities/mixins";
+@use "../utilities/variables";
 
 // Responsive para nav
-@include mixins.respond-to(768px) {
+@media (max-width: 768px) {
   .navegacionUno, .navegacionDos {
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@
   }
 }
 
-@include mixins.respond-to(480px) {
+@media (max-width: 480px) {
   .navegacionUno, .navegacionDos {
     padding: 10px;
   }
@@ -43,21 +43,8 @@
   }
 }
 
-// Responsive para las cards
-@include mixins.respond-to(768px) {
-  .card {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-
-@include mixins.respond-to(480px) {
-  .card {
-    grid-template-columns: 1fr; 
-  }
-}
-
 // Responsive para tours
-@include mixins.respond-to(768px) {
+@media (max-width: 768px) {
   .contenedorCards {
     grid-template-columns: repeat(2, 1fr); 
   }
@@ -71,7 +58,7 @@
   }
 }
 
-@include mixins.respond-to(480px) {
+@media (max-width: 480px) {
   .contenedorCards {
     grid-template-columns: 1fr; 
   }
@@ -91,7 +78,7 @@
 }
 
 // Responsive texto tours
-@include mixins.respond-to(768px) {
+@media (max-width: 768px) {
   .cardTours .contenidoTours {
     padding: 15px;
     text-align: center;
@@ -103,7 +90,7 @@
   }
 }
 
-@include mixins.respond-to(480px) {
+@media (max-width: 480px) {
   .cardTours .contenidoTours {
     padding: 10px;
     text-align: center;

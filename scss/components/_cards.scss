@@ -1,5 +1,4 @@
 @use "../utilities/variables";
-@use "../utilities/mixins";
 
 .card {
   display: grid;
@@ -8,6 +7,14 @@
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .cardDestino {
@@ -26,7 +33,12 @@
   flex-direction: column;
   align-items: center;
 
-  @include mixins.hover-effect(variables.$color-primary);
+  &:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    background-color: lighten(variables.$color-primary, 10%);
+    opacity: 0.9;
+  }
 }
 
 .cardDestino img {
@@ -40,7 +52,7 @@
   position: absolute; 
   width: 100%;
   text-align: center;
-  color: variables.$color-text; // Cambio realizado para que el texto sea blanco
+  color: variables.$color-text;
   font-weight: bold;
   left: 50%;
   transform: translateX(-50%);
