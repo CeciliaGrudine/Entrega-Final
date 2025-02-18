@@ -14,3 +14,10 @@ Proyecto creado con HTML y CSS.
 - Pseudoclases
 - "+"
 
+## SASS
+- Variables
+- Mixins
+- Extends
+- Imports (use)
+- Mapas de colores
+
