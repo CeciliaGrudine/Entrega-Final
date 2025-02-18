@@ -70,9 +70,11 @@ h3 {
   text-decoration: none;
   padding: 10px;
 }
-
 .lista-nav li a:hover {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  background-color: rgb(0, 104, 98.1132075472);
+  opacity: 0.9;
 }
 
 .contenedor-main {
@@ -113,14 +115,15 @@ h3 {
   z-index: 2;
 }
 
-.contenedor-boton button:hover {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+.contenedor-boton button:hover:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
-  background-color: #5a7639;
+  background-color: rgb(0, 104, 98.1132075472);
+  opacity: 0.9;
 }
 
 .cuerpoIndex {
-  background-color: black;
+  background-color: #000000;
 }
 
 .bodyAbout {
@@ -245,10 +248,10 @@ h3 {
   width: 100%;
   border-radius: 20px;
 }
-
 .cardTours:hover {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
+  background-color: rgb(0, 104, 98.1132075472);
   opacity: 0.9;
 }
 
@@ -307,7 +310,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  color: white;
+  color: #ffffff;
 }
 
 .listaContacto {
@@ -347,7 +350,7 @@ h3 {
 .listaContacto input {
   width: 425px;
   height: 48px;
-  background-color: white;
+  background-color: #ffffff;
   border: none;
   padding: 10px;
   font-size: 18px;
@@ -405,10 +408,8 @@ input[type=submit] {
 }
 
 .pagContact a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 19px;
-  margin-right: 15px;
 }
 
 @media (max-width: 768px) {
@@ -541,6 +542,12 @@ input[type=submit] {
   flex-direction: column;
   align-items: center;
 }
+.cardDestino:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  background-color: rgb(0, 104, 98.1132075472);
+  opacity: 0.9;
+}
 
 .cardDestino img {
   width: 100%;
@@ -567,12 +574,6 @@ input[type=submit] {
 .cardDestino span {
   bottom: 20px;
   font-size: 1.2rem;
-}
-
-.cardDestino:hover {
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-  transform: scale(1.05);
-  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

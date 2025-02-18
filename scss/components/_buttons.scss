@@ -1,13 +1,16 @@
+@use "../utilities/variables";
+@use "../utilities/maps";
+
 .botonIndex {
-    display: block;
-    width: 289px;
-    height: 51px;
-    padding: 11px 18px;
-    border-radius: 20px;
-    background-color: #003532;
-    color: #ffffff;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 1.25rem;
-    border: none;
-    cursor: pointer;
-  }
+  display: block;
+  width: 289px;
+  height: 51px;
+  padding: 11px 18px;
+  border-radius: 20px;
+  background-color: map-get(maps.$button-colors, 'primary');
+  color: map-get(maps.$button-colors, 'text');
+  font-family: variables.$font-primary;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+}

@@ -1,20 +1,17 @@
+@use "../utilities/variables";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-// Variables tipográficas
-$font-primary: "Cormorant Garamond", serif;
-$font-secondary: "Lora", serif;
-
-// Extends 
+// Extends para reutilización de textos
 %heading-style {
-  font-family: $font-primary;
-  color: #ffffff;
+  font-family: variables.$font-primary;
+  color: variables.$color-text;
 }
 
 %paragraph-style {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
 }
 
-// estilos generales
+// Definición de estilos de texto generales
 h2 {
   @extend %heading-style;
 }

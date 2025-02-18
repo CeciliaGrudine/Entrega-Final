@@ -1,4 +1,6 @@
+@use "utilities/variables";
 @use "utilities/mixins";
+@use "utilities/maps";
 @use "base/reset";
 @use "base/typography";
 @use "layout/nav";
@@ -11,3 +13,9 @@
 @use "layout/responsive";
 @use "components/buttons";
 @use "components/cards";
+
+// quisiera aclarar que tuve que utilizar el @use y no el @import por una constante advertencia
+// que tenia cada vez que guardaba los cambios, entonces no podia ver cual eran los errores por
+// la constante alerta de "Deprecation Warning [global-builtin]"  Global built-in functions are deprecated 
+// and will be removed in Dart Sass 3.0.0. / Encontre esta solucion para poder ejecutarlo correctamente.
+// tuve el mismo problema con colores pero era menor el error a comparacion del uso del @import. 

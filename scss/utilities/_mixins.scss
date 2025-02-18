@@ -1,5 +1,16 @@
+// Mixins para media queries reutilizables
 @mixin respond-to($max-width) {
   @media (max-width: $max-width) {
     @content;
+  }
+}
+
+// Mixin para hover effects
+@mixin hover-effect($color) {
+  &:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    background-color: lighten($color, 10%);
+    opacity: 0.9;
   }
 }

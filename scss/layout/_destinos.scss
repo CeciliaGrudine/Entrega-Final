@@ -1,26 +1,28 @@
+@use "../utilities/variables";
+
 .bodyDestinos {
-    background-image: url(../assets/img/Deg1.png);
-    background-size: cover;
-    background-repeat: no-repeat; 
-  }
-  
-  .mainDestinos {
-    width: 100%;
-  }
-  
-  .tituloUno {
-    font-size: 4.75rem;
-    margin-top: 0px;
-    color: #ffffff;
-    padding: 20px; 
-    margin-left: 10px;
-  }
-  
-  .subtUno {
-    font-size: 2.8125rem;
-    margin-top: 0%;
-    padding: 0px; 
-    margin-left: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+  background-image: url(../assets/img/Deg1.png);
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.mainDestinos {
+  width: 100%;
+}
+
+.tituloUno {
+  font-size: 4.75rem;
+  margin-top: 0px;
+  color: variables.$color-text;
+  padding: 20px; 
+  margin-left: 10px;
+}
+
+.subtUno {
+  font-size: 2.8125rem;
+  margin-top: 0%;
+  padding: 0px; 
+  margin-left: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}

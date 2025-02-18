@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 .cuerpoIndex {
-    background-color: black;
-  }
+  background-color: variables.$color-background;
+}
