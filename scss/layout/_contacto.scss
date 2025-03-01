@@ -29,8 +29,12 @@
 }
 
 .contenedorForm {
-  width: 50%;
+  width: 100%; // Ajusta para ocupar todo el ancho disponible
   text-align: left;
+}
+
+.tituloUno {
+  margin-bottom: 20px; // Ajusta el valor según sea necesario
 }
 
 .listaContacto {
@@ -41,11 +45,14 @@
   display: block;
   font-size: 24px;
   margin-bottom: 5px;
+  width: 100%; // Asegura que los labels ocupen todo el ancho disponible
+  max-width: 400px; // Ajusta el valor según sea necesario para hacerlos más alargados
 }
 
-.listaContacto input {
-  width: 425px;
-  height: 48px;
+.input-largo,
+.textarea-largo {
+  width: 100%; // Asegura que los inputs y textarea ocupen todo el ancho disponible
+  max-width: 400px; // Ajusta el valor según sea necesario para hacerlos más alargados
   background-color: variables.$color-text;
   border: none;
   padding: 10px;
@@ -53,7 +60,7 @@
   border-radius: 5px;
 }
 
-#mensaje {
+.textarea-largo {
   height: 195px;
 }
 
@@ -66,19 +73,6 @@ input[type="submit"] {
   width: 200px; 
   font-size: 12px; 
   padding: 5px 10px; 
-}
-
-.modifImagen {
-  width: 500px;
-  height: 400px;
-  border-radius: 20px;
-  object-fit: cover;
-  margin-left: 30px;
-}
-
-.modifImagen {
-  border-radius: 10px;
-  margin: 10px;
 }
 
 .footer-cont {

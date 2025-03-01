@@ -1,48 +1,5 @@
 @use "../utilities/variables";
 
-// Responsive para nav
-@media (max-width: 768px) {
-  .navegacionUno, .navegacionDos {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 10px 0;
-  }
-
-  .lista-nav {
-    justify-content: center; 
-    gap: 15px;
-    max-width: 100%; 
-  }
-
-  .lista-nav li {
-    flex: 1 1 45%; 
-    text-align: center;
-    max-width: 180px; 
-  }
-}
-
-@media (max-width: 480px) {
-  .navegacionUno, .navegacionDos {
-    padding: 10px;
-  }
-
-  .lista-nav {
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  .lista-nav li {
-    flex: 1 1 30%; 
-    max-width: 150px; 
-  }
-
-  .lista-nav li a {
-    padding: 8px 0;
-  }
-}
-
 // Responsive para tours
 @media (max-width: 768px) {
   .contenedorCards {
