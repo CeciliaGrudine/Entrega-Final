@@ -117,7 +117,21 @@ h3 {
 }
 
 .cuerpoIndex {
-  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.presentacionImg {
+  height: 100%;
+  object-fit: cover;
 }
 
 .bodyAbout {
