@@ -14,6 +14,9 @@
 @use "components/buttons";
 @use "components/cards";
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+
 // quisiera aclarar que tuve que utilizar el @use y no el @import por una constante advertencia
 // que tenia cada vez que guardaba los cambios, entonces no podia ver cual eran los errores por
 // la constante alerta de "Deprecation Warning [global-builtin]"  Global built-in functions are deprecated 

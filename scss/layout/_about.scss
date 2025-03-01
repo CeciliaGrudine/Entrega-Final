@@ -1,9 +1,14 @@
 @use "../utilities/variables";
+@use "../utilities/mixins";
 
 .bodyAbout {
   background-image: url(../assets/img/side_wave_background_2.jpg);
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
 }
 
 .contenedorAbout {
@@ -14,6 +19,7 @@
   max-width: 1200px; 
   margin: 0 auto; 
   padding: 20px;
+  flex: 1; 
 }
 
 .sobreNosotros {
@@ -21,16 +27,12 @@
   padding: 20px;
   border-radius: 41px;
   background-color: rgba(17, 70, 67, 0.43);
-  width: 50%; 
-  height: 900px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .imgAbout {
-  width: 50%; 
-  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,19 +47,30 @@
 }
 
 .tituloAbout {
-  font-size: 4.75rem;
-  margin-top: -80px;
-  color: variables.$color-text;
-  padding: 20px; 
-  text-align: center;
+  font-family: #{variables.$font-primary} !important;
+  font-size: 4rem !important; 
+  color: #{variables.$color-text-primary} !important;
+  text-align: center !important;
+  margin-bottom: 1rem !important;
+  @include mixins.responsive-font-size(4rem, 2rem); 
+}
+
+.subtUno {
+  font-family: #{variables.$font-secondary} !important;
+  font-size: 2rem !important; 
+  color: #{variables.$color-text-secondary} !important;
+  text-align: center !important;
+  margin-bottom: 1rem !important;
+  @include mixins.responsive-font-size(2rem, 1.25rem);
 }
 
 .textoAbout {
-  padding: 0px 20px; 
-  margin-left: 10px;
-  color: variables.$color-text;
-  font-family: variables.$font-primary;
-  font-size: 25px;
+  font-family: #{variables.$font-secondary} !important;
+  font-size: 1.5rem !important; 
+  color: #{variables.$color-text-primary} !important;
+  text-align: justify !important;
+  margin-bottom: 1rem !important;
+  @include mixins.responsive-font-size(1.25rem, 0.875rem);
 }
 
 .decoMain {

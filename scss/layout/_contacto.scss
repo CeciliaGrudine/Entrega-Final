@@ -29,12 +29,12 @@
 }
 
 .contenedorForm {
-  width: 100%; // Ajusta para ocupar todo el ancho disponible
+  width: 100%; 
   text-align: left;
 }
 
 .tituloUno {
-  margin-bottom: 20px; // Ajusta el valor según sea necesario
+  margin-bottom: 20px; 
 }
 
 .listaContacto {
@@ -45,14 +45,14 @@
   display: block;
   font-size: 24px;
   margin-bottom: 5px;
-  width: 100%; // Asegura que los labels ocupen todo el ancho disponible
-  max-width: 400px; // Ajusta el valor según sea necesario para hacerlos más alargados
+  width: 100%; 
+  max-width: 400px; 
 }
 
 .input-largo,
 .textarea-largo {
-  width: 100%; // Asegura que los inputs y textarea ocupen todo el ancho disponible
-  max-width: 400px; // Ajusta el valor según sea necesario para hacerlos más alargados
+  width: 100%; 
+  max-width: 400px; 
   background-color: variables.$color-text;
   border: none;
   padding: 10px;
