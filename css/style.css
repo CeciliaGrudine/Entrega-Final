@@ -245,27 +245,50 @@ h3 {
   background-image: url(../assets/img/Deg1.png);
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .mainDestinos {
-  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tituloUno {
-  font-size: 4.75rem;
-  margin-top: 0px;
-  color: #ffffff;
-  padding: 20px;
-  margin-left: 10px;
+  font-family: Cormorant Garamond, serif !important;
+  font-size: 4rem !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  margin-bottom: 1rem !important;
+}
+@media (min-width: 1200px) {
+  .tituloUno {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .tituloUno {
+    font-size: 2rem;
+  }
 }
 
 .subtUno {
-  font-size: 2.8125rem;
-  margin-top: 0%;
-  padding: 0px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  text-align: center;
+  font-family: Lora, serif !important;
+  font-size: 2rem !important;
+  color: #cccccc !important;
+  text-align: center !important;
+  margin-bottom: 1rem !important;
+}
+@media (min-width: 1200px) {
+  .subtUno {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .subtUno {
+    font-size: 1.25rem;
+  }
 }
 
 .bodyTours {
