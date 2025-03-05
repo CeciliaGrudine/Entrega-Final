@@ -79,6 +79,24 @@ h3 {
   overflow: hidden;
 }
 
+.tituloHeader {
+  font-family: Cormorant Garamond, serif !important;
+  font-size: 2rem !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  margin-top: 1rem !important;
+}
+@media (min-width: 1200px) {
+  .tituloHeader {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .tituloHeader {
+    font-size: 2rem;
+  }
+}
+
 .presentacionImg {
   width: 100%;
   height: 100%;
@@ -295,6 +313,7 @@ h3 {
   background-image: url(../assets/img/deg2.png);
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .contenedorCards {
