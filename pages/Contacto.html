@@ -23,16 +23,16 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <section class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto lista-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/AboutMe.html">Conócenos</a>
+                            <a class="nav-link" href="./AboutMe.html">Conócenos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/Destinos.html">Destinos</a>
+                            <a class="nav-link" href="./Destinos.html">Destinos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./Tours.html">Tours</a>
@@ -41,7 +41,7 @@
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
                     </ul>
-                </div>
+                </section>
             </div>
         </nav>
     </header>
@@ -55,27 +55,27 @@
                         <h1 class="tituloUno">CONTACTO</h1>
                         <p class="estamos-a-un">Estamos a un mensaje de distancia</p>
                         <form>
-                            <div class="form-group listaContacto">
+                            <fieldset class="form-group listaContacto">
                                 <label for="nombre-apellido">Nombre y Apellido</label>
                                 <input type="text" class="form-control input-largo" id="nombre-apellido" required="" placeholder="Ingrese nombre completo">
-                            </div>
-                            <div class="form-group listaContacto">
+                            </fieldset>
+                            <fieldset class="form-group listaContacto">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control input-largo" id="email" required="">
-                            </div>
-                            <div class="form-group listaContacto">
+                            </fieldset>
+                            <fieldset class="form-group listaContacto">
                                 <label for="phone">Número de contacto</label>
                                 <input type="number" class="form-control input-largo" id="phone" required="">
-                            </div>
-                            <div class="form-group listaContacto">
+                            </fieldset>
+                            <fieldset class="form-group listaContacto">
                                 <label for="mensaje">Mensaje</label>
-                                <input type="number" class="form-control input-largo" id="phone" required="" placeholder="Escriba su mensaje aquí">
-                            </div>
-                            <div class="form-group form-check d-flex align-items-center">
+                                <textarea class="form-control input-largo" id="mensaje" required="" placeholder="Escriba su mensaje aquí"></textarea>
+                            </fieldset>
+                            <fieldset class="form-group form-check d-flex align-items-center">
                                 <input type="checkbox" class="form-check-input mr-3" id="terminos" name="terminos">
                                 <label class="form-check-label flex-grow-1 mx-3" for="terminos">Acepta términos y condiciones</label>
                                 <button type="submit" class="btn btn-primary ml-3">Enviar</button>
-                            </div>
+                            </fieldset>
                         </form>
                     </div>
                 </div>
